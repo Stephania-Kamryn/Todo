@@ -1,0 +1,71 @@
+/* --- basic styling --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* --- container --- */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+}
+
+/* --- input section --- */
+.input-section {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #5563DE;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-section button {
+  margin-left: 10px;
+  background: #5563DE;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-section button:hover {
+  background: #3944BC;
+}
+
+/* --- task list --- */
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  background: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
